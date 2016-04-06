@@ -40,8 +40,15 @@ export default function useNamedRoutes(createHistory) {
     createRoutes(routes).forEach(route => makePaths(paths, route, '/'));
 
     function resolveLocation(location) {
-      const name = typeof location === 'string' ? location : location.name;
-      if (!name || name[0] === '/') {
+      let name;
+      if (typeof location === 'string') {
+        if (location[0] !== '/') {
+          name = location;
+        }
+      } else {
+        name = location.name;
+      }
+      if (!name) {
         return location;
       }
 
