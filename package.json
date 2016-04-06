@@ -1,6 +1,6 @@
 {
   "name": "use-named-routes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Named route support for React Router",
   "files": [
     "lib"
