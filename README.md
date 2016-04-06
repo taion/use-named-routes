@@ -6,7 +6,7 @@ Drop-in named route support for [React Router](https://github.com/reactjs/react-
 
 ## Usage
 
-Enhance your history with `useNamedRoutes`, and pass in your routes:
+Enhance your history with `useNamedRoutes` and pass in your routes:
 
 ```js
 import createHistory from 'history/lib/createBrowserHistory';
