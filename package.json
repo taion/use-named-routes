@@ -1,0 +1,24 @@
+{
+  "name": "use-named-routes",
+  "version": "0.0.0",
+  "description": "Named route support for React Router",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taion/use-named-routes.git"
+  },
+  "keywords": [
+    "react",
+    "router",
+    "history"
+  ],
+  "author": "Jimmy Jia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taion/use-named-routes/issues"
+  },
+  "homepage": "https://github.com/taion/use-named-routes#readme"
+}
