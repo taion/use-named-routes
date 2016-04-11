@@ -1,6 +1,6 @@
 # use-named-routes [![npm][npm-badge]][npm]
 
-Drop-in named route support for [React Router](https://github.com/reactjs/react-router).
+Drop-in named route support for [rrtr](https://github.com/taion/rrtr).
 
 [![Discord][discord-badge]][discord]
 
@@ -10,7 +10,7 @@ Enhance your history with `useNamedRoutes` and pass in your routes:
 
 ```js
 import createHistory from 'history/lib/createBrowserHistory';
-import { Route, Router, useRouterHistory } from 'react-router';
+import { Route, Router, useRouterHistory } from 'rrtr';
 import useNamedRoutes from 'use-named-routes';
 
 /* ... */
@@ -67,7 +67,7 @@ this.context.router.replace({ pathname: '/widgets', query: { color: 'red' } });
 ### Installation
 
 ```shell
-$ npm i -S react-router history use-named-routes
+$ npm i -S rrtr history use-named-routes
 ```
 
 ### Route configuration

@@ -29,7 +29,7 @@
   "homepage": "https://github.com/taion/use-named-routes#readme",
   "peerDependencies": {
     "history": "^2.0.1",
-    "react-router": "^2.0.1"
+    "rrtr": "^2.1.2"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
@@ -42,8 +42,8 @@
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-react": "^4.2.3",
     "history": "^2.0.1",
-    "react-router": "^2.0.1",
-    "rimraf": "^2.5.2"
+    "rimraf": "^2.5.2",
+    "rrtr": "^2.1.2"
   },
   "dependencies": {
     "invariant": "^2.2.1"
