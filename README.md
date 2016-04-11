@@ -4,6 +4,8 @@ Drop-in named route support for [rrtr](https://github.com/taion/rrtr).
 
 [![Discord][discord-badge]][discord]
 
+**rrtr**? It's an actively-maintained fork of React Router. More details [here](https://medium.com/@taion/react-router-is-dead-long-live-rrtr-d229ca30e318).
+
 ## Usage
 
 Enhance your history with `useNamedRoutes` and pass in your routes:
