@@ -28,7 +28,7 @@ const history = useNamedRoutes(useRouterHistory(createHistory))({ routes });
 
 ReactDOM.render(
   <Router history={history} routes={routes} />,
-  mountNode
+  container
 );
 ```
 
