@@ -77,8 +77,8 @@ export default function useNamedRoutes(createHistory) {
       return history.createHref(resolveLocation(location));
     }
 
-    function createLocation(location) {
-      return history.createLocation(resolveLocation(location));
+    function createLocation(location, ...args) {
+      return history.createLocation(resolveLocation(location), ...args);
     }
 
     return {
