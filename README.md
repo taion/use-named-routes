@@ -67,7 +67,7 @@ this.context.router.replace({ pathname: '/widgets', query: { color: 'red' } });
 ### Installation
 
 ```shell
-$ npm i -S react-router history use-named-routes
+$ npm i -S react-router history@2 use-named-routes
 ```
 
 ### Route configuration
