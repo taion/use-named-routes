@@ -62,6 +62,14 @@ this.context.router.replace({ pathname: '/widgets', query: { color: 'red' } });
 <Link to="/widgets/qux">
 ```
 
+If you need to look up a route by name, there is an additional method on `history`/`router`, `lookupRouteByName`
+
+```js
+<Route path="users/:id" component={ViewUser} name="viewUser" customData="foo" />
+
+this.context.router.lookupRouteByName('viewUser').customData;
+```
+
 ## Guide
 
 ### Installation
