@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/taion/use-named-routes#readme",
   "peerDependencies": {
-    "history": "^2.0.0",
+    "history": ">=2.0.0 <4",
     "react-router": "^2.0.0"
   },
   "devDependencies": {
