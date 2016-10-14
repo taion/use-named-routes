@@ -28,8 +28,8 @@
   },
   "homepage": "https://github.com/taion/use-named-routes#readme",
   "peerDependencies": {
-    "history": "^2.0.0",
-    "react-router": "^2.0.0"
+    "history": "^2.0.0 || ^3.0.0",
+    "react-router": "^2.0.0 || ^3.0.0-0"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
