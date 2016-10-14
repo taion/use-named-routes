@@ -1,6 +1,6 @@
 {
   "name": "use-named-routes",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Drop-in named route support for React Router",
   "files": [
     "lib"
