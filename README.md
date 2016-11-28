@@ -1,3 +1,7 @@
+# No Maintenance Intended
+
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 # use-named-routes [![npm][npm-badge]][npm]
 
 Drop-in named route support for [React Router](https://github.com/reactjs/react-router).
