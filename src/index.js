@@ -2,7 +2,7 @@ import invariant from 'invariant';
 import { formatPattern } from 'react-router/lib/PatternUtils';
 import { createRoutes } from 'react-router/lib/RouteUtils';
 
-function makePaths(paths, route, basePath) {
+function makePaths(paths, routeConfigs, route, basePath) {
   const { path, name, indexRoute, childRoutes } = route;
 
   let fullPath;
@@ -20,14 +20,15 @@ function makePaths(paths, route, basePath) {
   if (name) {
     /* eslint-disable no-param-reassign */
     paths[name] = fullPath;
+    routeConfigs[name] = route;
     /* eslint-enable no-param-reassign */
   }
 
   if (indexRoute) {
-    makePaths(paths, indexRoute, fullPath);
+    makePaths(paths, routeConfigs, indexRoute, fullPath);
   }
   if (childRoutes) {
-    childRoutes.forEach(childRoute => makePaths(paths, childRoute, fullPath));
+    childRoutes.forEach(childRoute => makePaths(paths, routeConfigs, childRoute, fullPath));
   }
 }
 
@@ -37,7 +38,8 @@ export default function useNamedRoutes(createHistory) {
 
     const { routes } = options;
     const paths = {};
-    createRoutes(routes).forEach(route => makePaths(paths, route, '/'));
+    const routeConfigs = {};
+    createRoutes(routes).forEach(route => makePaths(paths, routeConfigs, route, '/'));
 
     function resolveLocation(location) {
       let name;
@@ -81,6 +83,10 @@ export default function useNamedRoutes(createHistory) {
       return history.createLocation(resolveLocation(location), ...args);
     }
 
+    function lookupRouteByName(name) {
+      return routeConfigs[name];
+    }
+
     return {
       ...history,
       push,
@@ -88,6 +94,7 @@ export default function useNamedRoutes(createHistory) {
       createPath,
       createHref,
       createLocation,
+      lookupRouteByName,
     };
   };
 }
